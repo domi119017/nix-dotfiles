@@ -1682,4 +1682,4 @@ cows=(
   stimpy supermilker surgery telebears three-eyes turkey turtle tux udder
   vader vader-koala
 )
-fortune | cowsay -f $(print -r -- ${cows[$(( $RANDOM % ${#cows[@]} + 1 ))]})
+fortune | cowsay -f $(print -r -- ${cows[$(( $RANDOM % ${#cows[@]} + 1 ))]}) | lolcat
