@@ -144,3 +144,6 @@ alias upnix="cd ~/nix-setup; git pull && update && update-home && gnome-session-
 export DISPLAY=:0
 export PATH=$(echo $PATH):/home/delta/.local/bin
 
+# Stop if not interactive
+[[ $- != *i* ]] && return
+fortune | cowsay -f stegosaurus
