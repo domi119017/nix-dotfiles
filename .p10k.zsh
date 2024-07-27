@@ -1674,4 +1674,12 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 'builtin' 'unset' 'p10k_config_opts'
 
 [[ $- != *i* ]] && return
-fortune | cowsay -f stegosaurus
+cows=(
+  blowfish bong bud-frogs bunny cheese cower daemon default dragon
+  dragon-and-cow elephant elephant-in-snake eyes flaming-sheep ghostbusters
+  head-in hellokitty kiss kitty koala kosh llama luke-koala meow milk moofasa
+  moose mutilated ren satanic sheep skeleton small sodomized stegosaurus
+  stimpy supermilker surgery telebears three-eyes turkey turtle tux udder
+  vader vader-koala
+)
+fortune | cowsay -f $(print -r -- ${cows[$(( $RANDOM % ${#cows[@]} + 1 ))]})
