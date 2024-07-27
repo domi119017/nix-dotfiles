@@ -1675,8 +1675,8 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 
 [[ $- != *i* ]] && return
 cows=(
-  blowfish bong bud-frogs bunny cheese cower daemon default dragon
-  dragon-and-cow elephant elephant-in-snake eyes flaming-sheep ghostbusters
+  blowfish bong bud-frogs bunny cheese cower daemon default 
+  elephant elephant-in-snake eyes flaming-sheep ghostbusters
   head-in hellokitty kiss kitty koala kosh llama luke-koala meow milk moofasa
   moose mutilated ren satanic sheep skeleton small sodomized stegosaurus
   stimpy supermilker surgery telebears three-eyes turkey turtle tux udder
