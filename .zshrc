@@ -131,6 +131,8 @@ fuck () {
  test -n "$TF_CMD" && print -s $TF_CMD
 }
 
+gcp() { git add -A && git commit -m "$@" && git push; };
+
 alias zrc="nano ~/.zshrc"
 alias hwk="ssh pi@192.168.178.130"
 alias opn="ssh pi@192.168.178.81"
