@@ -137,8 +137,8 @@ alias opn="ssh pi@192.168.178.81"
 alias e="exit"
 alias ll="ls -l"
 alias la="ls -la"
-alias update="sudo nixos-rebuild switch --flake ~/nix-setup#delta-surface"
-alias update-home="home-manager switch --flake ~/nix-setup#delta@delta-surface"
+alias update="sudo nixos-rebuild switch --verbose --flake ~/nix-setup#delta-surface"
+alias update-home="home-manager switch --verbose --flake ~/nix-setup#delta@delta-surface"
 alias upnix="cd ~/nix-setup; git pull && update && update-home && gnome-session-quit --logout --force --no-prompt;"
 
 export DISPLAY=:0
