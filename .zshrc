@@ -143,3 +143,6 @@ alias upnix="cd ~/nix-setup; git pull && update && update-home && gnome-session-
 
 export DISPLAY=:0
 export PATH=$(echo $PATH):/home/delta/.local/bin
+
+# Stegosaurus
+echo $(fortune | cowsay -f stegosaurus)
