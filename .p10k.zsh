@@ -1654,7 +1654,7 @@
   #   - verbose: Enable instant prompt and print a warning when detecting console output during
   #              zsh initialization. Choose this if you've never tried instant prompt, haven't
   #              seen the warning, or if you are unsure what this all means.
-  typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose
+  typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
   # Hot reload allows you to change POWERLEVEL9K options after Powerlevel10k has been initialized.
   # For example, you can type POWERLEVEL9K_BACKGROUND=red and see your prompt turn red. Hot reload
@@ -1674,12 +1674,13 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 'builtin' 'unset' 'p10k_config_opts'
 
 [[ $- != *i* ]] && return
-cows=(
-  blowfish bong bud-frogs bunny cheese cower daemon default dragon
-  dragon-and-cow elephant elephant-in-snake eyes flaming-sheep ghostbusters
-  head-in hellokitty kiss kitty koala kosh llama luke-koala meow milk moofasa
-  moose mutilated ren satanic sheep skeleton small sodomized stegosaurus
-  stimpy supermilker surgery telebears three-eyes turkey turtle tux udder
-  vader vader-koala
-)
-fortune | cowsay -f $(print -r -- ${cows[$(( $RANDOM % ${#cows[@]} + 1 ))]})
+# cows=(
+#   blowfish bong bud-frogs bunny cheese cower daemon default dragon
+#   dragon-and-cow elephant elephant-in-snake eyes flaming-sheep ghostbusters
+#   head-in hellokitty kiss kitty koala kosh llama luke-koala meow milk moofasa
+#   moose mutilated ren satanic sheep skeleton small sodomized stegosaurus
+#   stimpy supermilker surgery telebears three-eyes turkey turtle tux udder
+#   vader vader-koala
+# )
+# $(print -r -- ${cows[$(( $RANDOM % ${#cows[@]} + 1 ))]})
+fortune | cowsay -f stegosaurus
