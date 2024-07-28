@@ -153,6 +153,6 @@ alias update="sudo nixos-rebuild switch --verbose --flake ~/nix-setup#delta-surf
 alias update-home="home-manager switch --verbose --flake ~/nix-setup#delta@delta-surface"
 alias upnix="cd ~/nix-setup; git pull && update && update-home && gnome-session-quit --logout --force --no-prompt;"
 
-export DISPLAY=:0
+# export DISPLAY=:0
 export PATH=$(echo $PATH):/home/delta/.local/bin
 
