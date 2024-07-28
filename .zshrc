@@ -141,7 +141,7 @@ fuck () {
 }
 
 alias gcmp='gitcommitallpush() { git add -A && git commit -m "$@" && git push; }; gitcommitallpush'
-
+alias cat="bat"
 alias zrc="nano ~/.zshrc"
 alias hwk="ssh pi@192.168.178.130"
 alias opn="ssh pi@192.168.178.81"
