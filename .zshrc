@@ -87,7 +87,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions z zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -153,6 +153,8 @@ alias update="sudo nixos-rebuild switch --verbose --flake ~/nix-setup#surfacego2
 alias update-home="home-manager switch --verbose --flake ~/nix-setup#delta@surfacego2"
 alias upnix="cd ~/nix-setup; git pull && update && update-home && gnome-session-quit --logout --force --no-prompt;"
 
-# export DISPLAY=:0
-export PATH=$(echo $PATH):/home/delta/.local/bin
+# Dont think we need this with nix, we'll see
+# todo: remove if not needed
+# export PATH=$(echo $PATH):/home/delta/.local/bin
 
+eval "$(zoxide init zsh --cmd cd)"
