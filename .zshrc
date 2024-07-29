@@ -149,8 +149,8 @@ alias e="exit"
 alias f="fuck"
 alias ll="ls -l"
 alias la="ls -la"
-alias update="sudo nixos-rebuild switch --verbose --flake ~/nix-setup#delta-surface"
-alias update-home="home-manager switch --verbose --flake ~/nix-setup#delta@delta-surface"
+alias update="sudo nixos-rebuild switch --verbose --flake ~/nix-setup#surfacego2"
+alias update-home="home-manager switch --verbose --flake ~/nix-setup#delta@surfacego2"
 alias upnix="cd ~/nix-setup; git pull && update && update-home && gnome-session-quit --logout --force --no-prompt;"
 
 # export DISPLAY=:0
