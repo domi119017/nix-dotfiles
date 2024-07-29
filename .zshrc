@@ -148,10 +148,7 @@ alias opn="ssh pi@192.168.178.81"
 alias e="exit"
 alias f="fuck"
 alias ll="ls -l"
-alias la="ls -la"
-alias update="sudo nixos-rebuild switch --verbose --flake ~/nix-setup#surfacego2"
-alias update-home="home-manager switch --verbose --flake ~/nix-setup#delta@surfacego2"
-alias upnix="cd ~/nix-setup; git pull && update && update-home && gnome-session-quit --logout --force --no-prompt;"
+alias lla="ls -la"
 
 # Dont think we need this with nix, we'll see
 # todo: remove if not needed
