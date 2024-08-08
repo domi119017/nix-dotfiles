@@ -1,10 +1,7 @@
 cows=(
-  blowfish bong bud-frogs bunny cheese cower daemon default 
-  elephant elephant-in-snake eyes flaming-sheep ghostbusters
-  head-in hellokitty kiss kitty koala kosh llama luke-koala meow milk moofasa
-  moose mutilated ren satanic sheep skeleton small sodomized stegosaurus
-  stimpy supermilker surgery telebears three-eyes turkey turtle tux udder
-  vader vader-koala
+  bong bud-frogs bunny cower default elephant elephant-in-snake flaming-sheep 
+  head-in hellokitty kitty koala llama luke-koala moofasa moose mutilated satanic sheep 
+  skeleton small sodomized stimpy supermilker telebears three-eyes tux udder vader
 )
 fortune -s | cowsay -f $(print -r -- ${cows[$(( $RANDOM % ${#cows[@]} + 1 ))]}) | lolcat
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
